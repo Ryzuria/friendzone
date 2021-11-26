@@ -1,8 +1,10 @@
 <?php
     define('servername', 'us-cdbr-east-04.cleardb.com');
-    define('username', 'b09423697278db');
-    define('password', '6f5ea12e');
-    define('dbname', 'heroku_54c1507e91af1b1');
+    define('username', 'b704f936304f6a');
+    define('password', '13bd7104');
+    define('dbname', 'heroku_5b42ede352dcb70');
 
     $objCon = mysqli_connect(servername, username, password,dbname);
 ?>
+
+mysql://b704f936304f6a:13bd7104@us-cdbr-east-04.cleardb.com/heroku_5b42ede352dcb70?reconnect=true
