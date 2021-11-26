@@ -1,0 +1,27 @@
+.navbar-dark .navbar-nav .nav-link {
+    font-family: MyFontMML;
+    font-size: 2.6vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 8px #000000;
+}
+
+.navbar-custom {
+    background-color: #73558b;
+}
+
+#navbarText :hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: MyFontMML;
+    src: url(../assets/font/FC\ Marshmallow\ Brush\ Regular.otf);
+ }
