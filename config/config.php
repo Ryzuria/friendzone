@@ -6,5 +6,3 @@
 
     $objCon = mysqli_connect(servername, username, password,dbname);
 ?>
-
-mysql://b704f936304f6a:13bd7104@us-cdbr-east-04.cleardb.com/heroku_5b42ede352dcb70?reconnect=true
