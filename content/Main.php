@@ -35,8 +35,12 @@
                             <a class="nav-link active" href="ChooseFriend.php" style="vertical-align:middle;">Friend Gallery</a>
                         </li>
                         <li class="nav-item align-self-center">
+                            <a class="nav-link active" href="howto.php" style="vertical-align:middle;">How to use</a>
+                        </li>
+                        <li class="nav-item align-self-center">
                             <a class="nav-link active" href="about.php" style="vertical-align:middle;">About Us</a>
                         </li>
+                        
                         <li class="nav-item align-self-center">
                             <a class="nav-link active"
                                 href="https://www.facebook.com/sathidaCerSerZer"><img

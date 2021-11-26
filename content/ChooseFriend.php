@@ -10,6 +10,20 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/galleryv3.css">
     <link href="../css/navbar.css" rel="stylesheet">
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        var key = 'hadModal',
+            hadModal = localStorage.getItem(key);
+
+        if (!hadModal) {
+            $('#termofservice').modal('show');
+        }
+        $('#termofservice').on('submit', function(event) {
+            localStorage.setItem(key, true);
+        })
+    });
+    </script>
 </head>
 
 <body style="background-image: url(../assets/images/bg0v2.jpg);">
@@ -32,6 +46,9 @@
                                 Gallery</a>
                         </li>
                         <li class="nav-item align-self-center">
+                            <a class="nav-link active" href="howto.php" style="vertical-align:middle;">How to use</a>
+                        </li>
+                        <li class="nav-item align-self-center">
                             <a class="nav-link active" href="about.php" style="vertical-align:middle;">About Us</a>
                         </li>
                         <li class="nav-item align-self-center">
@@ -44,6 +61,46 @@
                 </div>
             </div>
         </nav>
+        <div class="modal fade" id="termofservice" tabindex="-1" aria-labelledby="termofservicelabel" aria-hidden="true"
+            style="color:black; text-shadow: 0px 0px#ffffff;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="termofservicelabel">
+                            <p class="h1">Term of service</p>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <form action="">
+                        <div class="modal-body">
+                            <p class="h3">Please understand</p>
+                            ผู้ใช้บริการรับทราบและยินยอมปฏิบัติตามนโยบายและข้อตกลงในการให้บริการของ friendzoneweb
+                            ซึ่งบริหารงานโดย บริษัท analyzia group
+                            ผู้ใช้บริการรับทราบและยินยอมปฏิบัติตามกฎระเบียบที่ออกโดย friendzoneweb
+                            ซึ่งมีรายละเอียดดังนี้<br>
+                            1. ทาง friendzone มีข้อกำหนดในการให้บริการดังนี้<br>
+                            - การชวนไปแต่ละครั้งจะมีระยะเพียงแค่ 1 วัน ไม่มีค้างคืน<br>
+                            - ต้องไม่มีเพศสัมพันธ์<br>
+                            - ห้ามพาไปดื่มกินแฮลกอฮอล์และของมึนเมาต่างๆ<br>
+                            - ห้ามทำสิ่งผิดกฎหมาย<br>
+                            - ห้ามพาไปในสถานที่ที่ไม่เหมาะสม ลับหูลับตาคน ที่รโหฐาน<br>
+                            2. ผู้ให้บริการขอสงวนสิทธิ์ที่จะบอกเลิกสัญญาโดยมิต้องแจ้งล่วงหน้า โดยไม่มีการคืนค่าบริการใดๆ
+                            ทั้งสิ้น
+                            ถ้าผู้ใช้บริการมีการกระทำที่ขัดต่อนโยบายการใช้บริการดังที่กล่าวมาข้างต้นผู้ให้บริการขอสงวนสิทธิ์ในการเป็นผู้พิจารณาว่าสิ่งที่ผู้ใช้บริการกระทำนั้นเป็นการผิดกฎระเบียบข้อบังคับหรือไม่<br>
+                            3. ข้อมูลที่ผู้ใช้บริการให้กับผู้ให้บริการ ต้องเป็นข้อมูลที่เป็นจริงและถูกต้อง
+                            หากผู้ใช้บริการป้อนข้อมูลไม่ถูกต้องหรือข้อมูลมั่วเข้ามา ผู้ให้บริการจะไม่จัดทำตามคำขอ<br>
+
+                        </div>
+                        <div class="modal-footer">
+                            <a href="../index.php"><button type="button" class="btn btn-secondary">Close</button></a>
+                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Understand</button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
         <div class="bg">
             <div class=" d-flex flex-row bd-highlight">
                 <div class="leftbarname fontheader ">
@@ -52,28 +109,28 @@
                             <p class="mgt mgl ">Name</p><br>
                         </div>
                         <div id="s1" style="display: none;">
-                            <p class="mgt mgl">Okusora Shinshiro</p><br>
+                            <p class="mgt mgl">OkusoraShinshiro</p><br>
                         </div>
                         <div id="s2" style="display: none;">
-                            <p class="mgt mgl">Teru Tendo</p><br>
+                            <p class="mgt mgl">TeruTendo</p><br>
                         </div>
                         <div id="s3" style="display: none;">
-                            <p class="mgt mgl">yyyyyyy3</p><br>
+                            <p class="mgt mgl">Smarty</p><br>
                         </div>
                         <div id="s4" style="display: none;">
-                            <p class="mgt mgl">yyyyyyy4</p><br>
+                            <p class="mgt mgl">Folky</p><br>
                         </div>
                         <div id="s5" style="display: none;">
-                            <p class="mgt mgl">yyyyyyy5</p><br>
+                            <p class="mgt mgl">Belle</p><br>
                         </div>
                         <div id="s6" style="display: none;">
-                            <p class="mgt mgl">yyyyyyy6</p><br>
+                            <p class="mgt mgl">Jiwwy</p><br>
                         </div>
                         <div id="s7" style="display: none;">
-                            <p class="mgt mgl">yyyyyyy7</p><br>
+                            <p class="mgt mgl">DangDa</p><br>
                         </div>
                         <div id="s8" style="display: none;">
-                            <p class="mgt mgl">yyyyyyy8</p><br>
+                            <p class="mgt mgl">KieKra</p><br>
                         </div>
                         <div id="s9" style="display: none;">
                             <p class="mgt mgl">yyyyyyy9</p><br>
@@ -92,28 +149,28 @@
                         <p class="positiontext mgt ">Name</p><br>
                     </div>
                     <div id="n1" style="display: none;">
-                        <p class="positiontext mgt ">Okusora Shinshiro</p><br>
+                        <p class="positiontext mgt ">OkusoraShinshiro</p><br>
                     </div>
                     <div id="n2" style="display: none;">
-                        <p class="positiontext mgt ">Teru Tendo</p><br>
+                        <p class="positiontext mgt ">TeruTendo</p><br>
                     </div>
                     <div id="n3" style="display: none;">
-                        <p class="positiontext mgt ">XXXXXXXXXXXX3</p><br>
+                        <p class="positiontext mgt ">Smarty</p><br>
                     </div>
                     <div id="n4" style="display: none;">
-                        <p class="positiontext mgt ">XXXXXXXXXXXX4</p><br>
+                        <p class="positiontext mgt ">Folky</p><br>
                     </div>
                     <div id="n5" style="display: none;">
-                        <p class="positiontext mgt ">XXXXXXXXXXXX5</p><br>
+                        <p class="positiontext mgt ">Belle</p><br>
                     </div>
                     <div id="n6" style="display: none;">
-                        <p class="positiontext mgt ">XXXXXXXXXXXX6</p><br>
+                        <p class="positiontext mgt ">Jiwwy</p><br>
                     </div>
                     <div id="n7" style="display: none;">
-                        <p class="positiontext mgt ">XXXXXXXXXXXX7</p><br>
+                        <p class="positiontext mgt ">DangDa</p><br>
                     </div>
                     <div id="n8" style="display: none;">
-                        <p class="positiontext mgt ">XXXXXXXXXXXX8</p><br>
+                        <p class="positiontext mgt ">KieKra</p><br>
                     </div>
                     <div id="n9" style="display: none;">
                         <p class="positiontext mgt ">XXXXXXXXXXXX9</p><br>
@@ -145,33 +202,33 @@
                             </p>
                         </div>
                         <div id="d3" style="display: none;">
-                            <p class="mgl">3xxxxxxxxxxxxxxxx33xxxxxxxxxxxxxxxxxxxxxx
-                                <br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                            <p class="mgl"> ชายผู้อยู่เหนือชายทั้งปวง
+                                <br> ฉายาของเขาก็คือ ใจเกเร
                             </p>
                         </div>
                         <div id="d4" style="display: none;">
-                            <p class="mgl">4xxxxxxxxxxxxxxxx44xxxxxxxxxxxxxxxxxxxxxx
-                                <br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                            <p class="mgl">เป็นผู้ชายที่สามารถยิง X-Burner ในร้านเหล้าได้
+                                <br>
                             </p>
                         </div>
                         <div id="d5" style="display: none;">
-                            <p class="mgl">5xxxxxxxxxxxxxxxx55xxxxxxxxxxxxxxxxxxxxxx
-                                <br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                            <p class="mgl">สุดยอดเลเยอร์ที่รวยที่สุดในจักรวาล
+                                <br>พร้อมไปกับคุณแล้ววันนี้
                             </p>
                         </div>
                         <div id="d6" style="display: none;">
-                            <p class="mgl">6xxxxxxxxxxxxxxxxx66xxxxxxxxxxxxxxxxxxxxx
-                                <br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                            <p class="mgl">ชายผู้เงียบขรีม ไม่มีใครรู้ว่าเค้าคิดอะไรอยู่
+                                <br>แต่มันช่างน่าค้นหาและมีเสน่ห์
                             </p>
                         </div>
                         <div id="d7" style="display: none;">
-                            <p class="mgl">7xxxxxxxxxxxxxxxxx77xxxxxxxxxxxxxxxxxxxxx
-                                <br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                            <p class="mgl">ไอน์สไตน์กลับชาติมาเกิด
+                                <br>อัจริยะที่มาพร้อมกับพลังอันยิ่งใหญ่กับความรับผิดชอบที่ใหญ่ยิ่ง
                             </p>
                         </div>
                         <div id="d8" style="display: none;">
-                            <p class="mgl">8xxxxxxxxxxxxxxxxxxx88xxxxxxxxxxxxxxxxxxx
-                                <br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                            <p class="mgl">เด็กหนุ่มขี้เหงา
+                                <br>ผู้ที่ใช้นิ้วได้อย่างชำนาญ ขอแค่เป็นเรื่องที่เกี่ยวกับนิ้วบอกเขาได้หมด
                             </p>
                         </div>
                         <div id="d9" style="display: none;">
@@ -204,27 +261,28 @@
                                 </div>
                                 <div class="blockimg m-2" onclick="replace('c3','s3','n3','d3','bt3','v3')"
                                     data-bs-toggle="tooltip" data-bs-placement="top" title="C3">
-                                    <img src="../assets/images/MiniCharaGeneral.png" alt="" class="imgcha">
+                                    <img src="../assets/images/tieCC.gif" alt="" class="imgcha">
                                 </div>
                                 <div class="blockimg m-2" onclick="replace('c4','s4','n4','d4','bt4','v4')"
                                     data-bs-toggle="tooltip" data-bs-placement="top" title="C4">
-                                    <img src="../assets/images/MiniCharaGeneral.png" alt="" class="imgcha">
+                                    <img style="border-style: solid;border-color:#73558b;border-width: 0.1vw;"
+                                        src="../assets/images/fgc.gif" alt="" class="imgcha">
                                 </div>
                                 <div class="blockimg m-2" onclick="replace('c5','s5','n5','d5','bt5','v5')"
                                     data-bs-toggle="tooltip" data-bs-placement="top" title="C5">
-                                    <img src="../assets/images/MiniCharaGeneral.png" alt="" class="imgcha">
+                                    <img src="../assets/images/MiniBelle.png" alt="" class="imgcha">
                                 </div>
                                 <div class="blockimg m-2" onclick="replace('c6','s6','n6','d6','bt6','v6')"
                                     data-bs-toggle="tooltip" data-bs-placement="top" title="C6">
-                                    <img src="../assets/images/MiniCharaGeneral.png" alt="" class="imgcha">
+                                    <img src="../assets/images/jiwmin.png" alt="" class="imgcha">
                                 </div>
                                 <div class="blockimg m-2" onclick="replace('c7','s7','n7','d7','bt7','v7')"
                                     data-bs-toggle="tooltip" data-bs-placement="top" title="C7">
-                                    <img src="../assets/images/MiniCharaGeneral.png" alt="" class="imgcha">
+                                    <img src="../assets/images/dangda-min.png" alt="" class="imgcha">
                                 </div>
                                 <div class="blockimg m-2" onclick="replace('c8','s8','n8','d8','bt8','v8')"
                                     data-bs-toggle="tooltip" data-bs-placement="top" title="C8">
-                                    <img src="../assets/images/MiniCharaGeneral.png" alt="" class="imgcha">
+                                    <img src="../assets/images/kra-min.png" alt="" class="imgcha">
                                 </div>
                                 <div class="blockimg m-2" onclick="replace('c9','s9','n9','d9','bt9','v9')"
                                     data-bs-toggle="tooltip" data-bs-placement="top" title="C9">
@@ -260,22 +318,22 @@
                         <img src="../assets/images/Chara01.png" alt="" class="imgFull">
                     </div>
                     <div id="c3" class="imgC mgl" style="display: none;">
-                        <img src="../assets/images/CharaGeneral.png" alt="" class="imgFull">
+                        <img src="../assets/images/tieg.gif" alt="" class="imgFull">
                     </div>
                     <div id="c4" class="imgC mgl" style="display: none;">
-                        <img src="../assets/images/CharaGeneral.png" alt="" class="imgFull">
+                        <img src="../assets/images/fgu1.gif" alt="" class="imgFull">
                     </div>
                     <div id="c5" class="imgC mgl" style="display: none;">
-                        <img src="../assets/images/CharaGeneral.png" alt="" class="imgFull">
+                        <img src="../assets/images/Belle1.png" alt="" class="imgFull">
                     </div>
                     <div id="c6" class="imgC mgl" style="display: none;">
-                        <img src="../assets/images/CharaGeneral.png" alt="" class="imgFull">
+                        <img src="../assets/images/jiw.png" alt="" class="imgFull">
                     </div>
                     <div id="c7" class="imgC mgl" style="display: none;">
-                        <img src="../assets/images/CharaGeneral.png" alt="" class="imgFull">
+                        <img src="../assets/images/dangda.png" alt="" class="imgFull">
                     </div>
                     <div id="c8" class="imgC mgl" style="display: none;">
-                        <img src="../assets/images/CharaGeneral.png" alt="" class="imgFull">
+                        <img src="../assets/images/kra.png" alt="" class="imgFull">
                     </div>
                     <div id="c9" class="imgC mgl" style="display: none;">
                         <img src="../assets/images/CharaGeneral.png" alt="" class="imgFull">
@@ -305,27 +363,27 @@
                             src="../assets/images/Viewlist.png" alt=""></a>
                 </div>
                 <div id="v3" class="container btimg" style="display: none;">
-                    <a href="view.php?FRIENDS=<?php echo "3" ?>" target="blank"><img class="imgbtn "
+                    <a href="view.php?FRIENDS=<?php echo "Smarty" ?>" target="blank"><img class="imgbtn "
                             src="../assets/images/Viewlist.png" alt=""></a>
                 </div>
                 <div id="v4" class="container btimg" style="display: none;">
-                    <a href="view.php?FRIENDS=<?php echo "4" ?>" target="blank"><img class="imgbtn "
+                    <a href="view.php?FRIENDS=<?php echo "Folky" ?>" target="blank"><img class="imgbtn "
                             src="../assets/images/Viewlist.png" alt=""></a>
                 </div>
                 <div id="v5" class="container btimg" style="display: none;">
-                    <a href="view.php?FRIENDS=<?php echo "5" ?>" target="blank"><img class="imgbtn "
+                    <a href="view.php?FRIENDS=<?php echo "Belle" ?>" target="blank"><img class="imgbtn "
                             src="../assets/images/Viewlist.png" alt=""></a>
                 </div>
                 <div id="v6" class="container btimg" style="display: none;">
-                    <a href="view.php?FRIENDS=<?php echo "6" ?>" target="blank"><img class="imgbtn "
+                    <a href="view.php?FRIENDS=<?php echo "Jiwwy" ?>" target="blank"><img class="imgbtn "
                             src="../assets/images/Viewlist.png" alt=""></a>
                 </div>
                 <div id="v7" class="container btimg" style="display: none;">
-                    <a href="view.php?FRIENDS=<?php echo "7" ?>" target="blank"><img class="imgbtn "
+                    <a href="view.php?FRIENDS=<?php echo "Dangda" ?>" target="blank"><img class="imgbtn "
                             src="../assets/images/Viewlist.png" alt=""></a>
                 </div>
                 <div id="v8" class="container btimg" style="display: none;">
-                    <a href="view.php?FRIENDS=<?php echo "8" ?>" target="blank"><img class="imgbtn "
+                    <a href="view.php?FRIENDS=<?php echo "KieKra" ?>" target="blank"><img class="imgbtn "
                             src="../assets/images/Viewlist.png" alt=""></a>
                 </div>
                 <div id="v9" class="container btimg" style="display: none;">
@@ -356,27 +414,27 @@
                             src="../assets/images/MakeFButton1.png" alt=""></a>
                 </div>
                 <div id="bt3" class="container btimg" style="display: none;">
-                    <a href="queue.php?FRIENDS=<?php echo "3" ?>"><img class="imgbtn "
+                    <a href="queue.php?FRIENDS=<?php echo "Smarty" ?>"><img class="imgbtn "
                             src="../assets/images/MakeFButton1.png" alt=""></a>
                 </div>
                 <div id="bt4" class="container btimg" style="display: none;">
-                    <a href="queue.php?FRIENDS=<?php echo "4" ?>"><img class="imgbtn "
+                    <a href="queue.php?FRIENDS=<?php echo "Floky" ?>"><img class="imgbtn "
                             src="../assets/images/MakeFButton1.png" alt=""></a>
                 </div>
                 <div id="bt5" class="container btimg" style="display: none;">
-                    <a href="queue.php?FRIENDS=<?php echo "5" ?>"><img class="imgbtn "
+                    <a href="queue.php?FRIENDS=<?php echo "Belle" ?>"><img class="imgbtn "
                             src="../assets/images/MakeFButton1.png" alt=""></a>
                 </div>
                 <div id="bt6" class="container btimg" style="display: none;">
-                    <a href="queue.php?FRIENDS=<?php echo "6" ?>"><img class="imgbtn "
+                    <a href="queue.php?FRIENDS=<?php echo "Jiwwy" ?>"><img class="imgbtn "
                             src="../assets/images/MakeFButton1.png" alt=""></a>
                 </div>
                 <div id="bt7" class="container btimg" style="display: none;">
-                    <a href="queue.php?FRIENDS=<?php echo "7" ?>"><img class="imgbtn "
+                    <a href="queue.php?FRIENDS=<?php echo "Dangda" ?>"><img class="imgbtn "
                             src="../assets/images/MakeFButton1.png" alt=""></a>
                 </div>
                 <div id="bt8" class="container btimg" style="display: none;">
-                    <a href="queue.php?FRIENDS=<?php echo "8" ?>"><img class="imgbtn "
+                    <a href="queue.php?FRIENDS=<?php echo "KieKra" ?>"><img class="imgbtn "
                             src="../assets/images/MakeFButton1.png" alt=""></a>
                 </div>
                 <div id="bt9" class="container btimg" style="display: none;">
