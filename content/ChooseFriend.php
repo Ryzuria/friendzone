@@ -418,7 +418,7 @@
                             src="../assets/images/MakeFButton.png" alt=""></a>
                 </div>
                 <div id="bt4" class="container btimg" style="display: none;">
-                    <a href="queue.php?FRIENDS=<?php echo "Floky" ?>"><img class="imgbtn "
+                    <a href="queue.php?FRIENDS=<?php echo "Folky" ?>"><img class="imgbtn "
                             src="../assets/images/MakeFButton.png" alt=""></a>
                 </div>
                 <div id="bt5" class="container btimg" style="display: none;">
